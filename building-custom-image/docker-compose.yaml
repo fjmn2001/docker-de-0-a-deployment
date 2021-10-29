@@ -6,3 +6,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:80"
+    volumes:
+      - ${PWD}/var/www/html
