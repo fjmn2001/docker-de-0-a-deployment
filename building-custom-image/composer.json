@@ -1,0 +1,17 @@
+{
+    "name": "medine/workshop",
+    "autoload": {
+        "psr-4": {
+            "Medine\\Workshop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "francisco",
+            "email": "fjmn2001@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^v3.3"
+    }
+}
