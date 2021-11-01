@@ -23,5 +23,7 @@ services:
       - MYSQL_DATABASE=medine
     ports:
       - "3306:33060"
+      - "33060:33060"
+      - "33069:3306"
     volumes:
       - ${PWD}/migrations:/docker-entrypoint-initdb.d
