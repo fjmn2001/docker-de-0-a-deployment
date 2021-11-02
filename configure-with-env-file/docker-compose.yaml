@@ -5,10 +5,10 @@ services:
       context: ${PWD}
       dockerfile: Dockerfile
     environment:
-      - DISPLAY_ERRORS=On
-      - MYSQL_HOST=mysql
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
+      - DISPLAY_ERRORS
+      - MYSQL_HOST
+      - MYSQL_USER
+      - MYSQL_PASSWORD
     ports:
       - "8000:80"
     volumes:
@@ -19,8 +19,8 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=medine
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE
     ports:
       - "3306:33060"
       - "33060:33060"
